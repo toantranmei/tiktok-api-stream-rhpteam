@@ -120,4 +120,4 @@ app.get("/videos", async function (req, res) {
   return res.status(200).json(results);
 });
 
-app.listen(3000, () => console.log("running port 3000"));
+app.listen(process.env.PORT || 3000, () => console.log("running port 3000"));
